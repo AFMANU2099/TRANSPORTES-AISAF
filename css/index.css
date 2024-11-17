@@ -1,0 +1,757 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+body{
+    background-color: #d9d9d9;
+}
+
+/* Barra de Navegacion*/
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#barranav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    
+}
+
+#barlogo{
+    margin-left: 20px;
+}
+#barlogo img{
+    width:180px;
+}
+#redessociales{
+    margin-right: 20px;
+}
+#redessociales img{
+    width: 35px;
+    border-radius: 22px;
+} 
+#barranav #redessociales img:hover{
+opacity: 0.3;
+}
+
+#menu{
+
+    width: 70%;
+    height: 99.19px;
+    text-align: center;
+}
+#menu #listmenu{
+    
+    height: 100%;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu #listmenu a{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #1791c8;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 12px;
+    border-radius: 22px;
+    transition: all 0.3s ease 0s;
+    
+    
+}
+
+#menu #listmenu li{
+    list-style: none;
+    width: 145px;
+    height: 60%;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu #listmenu a:hover{
+    color:black;
+    background-color: #1791C8;
+    transform: scale(1.1);
+    
+
+}
+
+#menu #listmenu a.active{
+    color:black;
+    background-color: #d9d9d9;
+    border-radius: 22px;
+
+}
+/* Banner */
+
+#Banner{
+    background-color: black;
+    
+}
+#Banner #slider-box{
+    width: 100%;
+    height: 700px;
+    margin:  auto 0;
+   overflow: hidden;
+    
+    
+}
+
+#Banner #slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slid 16s infinite alternate ease-in-out;
+}
+
+#Banner #slider-box li{
+    width: 400%;
+    list-style: none;
+    position: relative;
+}
+
+#slider-box img{
+    width: 100%;
+    height: 700px;
+    opacity: 0.3;
+}
+
+@keyframes slid {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+#Banner .Bannertext{
+    position: absolute;
+    top:50%;
+    color: #d9d9d9; 
+    padding: 0 50px;
+    
+    
+
+}
+
+#Banner .Bannertext h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Seccion de Quienes Somos*/
+
+#Quienes_Somos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9;
+}
+
+#Quienes_Somos div{
+    width: 100%;
+    padding: 25px;
+}
+
+#Quienes_Somos h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 3em;
+}
+#Quienes_Somos p{
+    margin: 25px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+#Quienes_Somos img{
+    margin: 20px;
+    width: 100%;
+    height: 25em;
+    border-radius: 3em;
+}
+
+#Quienes_Somos span{
+    color: #1791C8;
+}
+/*Boton inicio pagina*/
+
+#btninicio{
+  position: sticky;
+  width: 50px;
+  height: 50px;
+  top: 78%;
+  left: 95%;
+  background-color:grey;
+  border-radius: 50%; 
+  transition: all 0.3s ease 0s; 
+  z-index: 10;
+}
+#btninicio:hover{
+   background-color: #1791C8;
+   transform: scale(1.2); 
+}
+#btninicio a img{
+    width: 50px;
+}
+#btninicio a{
+
+   top:-30px;
+    left:-20px;
+}
+/* Seccion Servicios*/
+
+#Servicios img{
+    width: 100%;
+    height: 160px;
+    border-radius: 2em;
+}
+
+#Servicios{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: #d9d9d9;   
+}
+#Servicios div{
+    transition: all 400ms ease;
+}
+#Servicios div:hover{
+    transform: translateY(-4%);
+}
+
+#Servicios div{
+    margin: 0 15px;
+    padding: 5px 0;
+
+}
+
+/*Seccion Contacto Ahora*/
+
+#contactoahora{
+    padding-left: 5em;
+    
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #d9d9d9;
+    
+}
+#contactoahora h2{
+    padding: 15px;
+}
+#contactoahora span{
+    color: #1791C8;
+}
+
+#contactoahora #llamaahora{
+    position: relative;
+    width: 300px;
+    height: 35%;
+    margin: 15%;
+    text-align: center;
+    background-color: black;
+    color: #d9d9d9;
+    border:2px solid black;
+    border-radius:25px;
+    z-index: 90;
+    
+}
+
+#contactoahora #llamaahora:hover{
+    border:2px solid #1791C8;
+    background-color: #1791C8;
+    
+    border-radius:25px;
+  
+}
+#contactoahora a{
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+#contactoahora a:hover{
+    color: black;
+}
+#contactoahora p{
+    position: relative;
+    top: 25%;
+    border: 3em;
+    border-color: black;
+    font-size: 1.3em;
+}
+/*Seccion Clientes*/
+#Clientes{
+    background-color: black;
+}
+#Clientes h2{
+    font-size: 3em;
+    text-align: center;
+    padding: 25px;
+    color: #d9d9d9;
+}
+#Clientes #logoclientes{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#Clientes #logoclientes img{
+    width: 100%;
+    height: 25em;
+    border-radius: 15px;
+}
+
+#logoclientes div{
+    margin: 0 15px;
+}
+
+
+/*Seccion Decision Correcta*/
+
+#decisioncorrecta{
+    padding-left: 5em;
+    
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #d9d9d9;
+    
+}
+#decisioncorrecta h2{
+    padding: 15px;
+}
+#decisioncorrecta span{
+    color: #1791C8;
+}
+
+#decisioncorrecta #llamaahora{
+    position: relative;
+    width: 300px;
+    height: 35%;
+    margin: 15%;
+    text-align: center;
+    background-color: black;
+    color: #d9d9d9;
+    border:2px solid black;
+    border-radius:25px;
+    z-index: 90;
+    
+}
+
+#decisioncorrecta #llamaahora:hover{
+    border:2px solid #1791C8;
+    background-color: #1791C8;
+    
+    border-radius:25px;
+  
+}
+#decisioncorrecta a{
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+#decisioncorrecta a:hover{
+    color: black;
+}
+#decisioncorrecta p{
+    position: relative;
+    top: 25%;
+    border: 3em;
+    border-color: black;
+    font-size: 1.3em;
+}
+
+/*Seccion Pie de pagina*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d9d9d9;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer #barlogo{
+    margin: 20px;
+}
+footer #barlogo img{
+    width:160px;
+    height:70px;
+}
+footer #redessociales{
+    margin-right: 20px;
+}
+footer #redessociales img{
+    width: 35px;
+    border-radius: 22px;
+} 
+
+footer p{
+    padding: 10px;
+}
+
+footer #redessociales img:hover{
+    opacity: 0.3;
+}
+
+/*************************************************************************/
+/*************************************************************************/
+/********PAGINA DE CONTACTO HTML******************************************/
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+
+#datos-empresa{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+#datos-empresa h2{
+    color: #1791C8;
+    padding: 15px;
+}
+#datos-empresa div{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-left: 1px solid #1791C8;
+}
+#datos-empresa img{
+    width: 35px;
+    margin: 25px;
+    
+}
+#obtner-cotizacion{
+    background-color: black;
+    color: #d9d9d9;
+}
+
+
+#obtner-cotizacion #text-cotiz{
+    text-align: center;
+    margin: 15px;
+    font-weight: 200;
+    letter-spacing: .09em;
+}
+
+#obtner-cotizacion #text-cotiz h2{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+#obtner-cotizacion #text-cotiz h2 span{
+    color: #1791C8;
+}
+/*Seccion Formulario Mapa*/
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 20px;
+    padding: 5% 0;
+    
+}
+
+.container *{
+    box-sizing: border-box;
+}
+.flex-outer, .flex-inner{
+    list-style: none;
+    padding: 0;
+}
+
+.flex-outer{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.flex-outer li, .flex-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-inner{
+    padding: 0 8px;
+    justify-content: space-between;
+}
+
+.flex-outer > li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.flex-outer li label, .flex-outer li p{
+padding: 8px;
+font-weight: 300;
+letter-spacing: .09em;
+text-transform: uppercase;
+}
+
+.flex-outer > li > label, .flex-outer li p{
+    flex: 1 0 100px;
+    max-width: 200px;
+} 
+
+.flex-outer > li > label + *, .flex-inner{
+    flex: 1 0 200px;
+}
+
+.flex-outer li p{
+    margin: 0;
+}
+
+.flex-outer li input:not([type='radio']), .flex-outer li textarea{
+    padding: 15px;
+    border: none;
+}
+
+.flex-outer .listbtn button{
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background-color: #1791C8;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    border-radius: 4px ;
+}
+.flex-inner li input{
+    width: 10px;
+}
+
+.flex-outer .listbtn{
+    display: flex;
+    flex: wrap;
+    align-items: center;
+}
+#form-maps{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    
+}
+
+#form-maps #maps{
+    width: 50%;
+    margin-left: 40px;
+    
+}
+
+#form-maps #maps iframe{
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+/*************************************************************************/
+/*************************************************************************/
+/********PAGINA DE PRODUCTO HTML******************************************/
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+
+
+body{
+    width: 100%;
+}
+/** Seccion Nuestro Servicio **/
+#nuestros_servicios {
+    margin: 20px;
+} 
+
+#nuestros_servicios span{
+    color: #1791c8;
+}
+#in{
+    color: #1791c8;
+}
+#nuestros_servicios h1{ 
+    text-align: center;
+    padding: 50px;
+    margin-top: 40px;
+
+    font-size: 45px;
+}
+#nuestros_servicios p{
+line-height: 1.5;
+    color: #6a6a6a;
+}
+#container{
+    width: 100%;
+    display: flex;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.8);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido h2{
+
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 150;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+/*Seccion Condiciones Servicio*/
+
+#condiciones_servicio{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    
+}
+
+#condiciones_servicio img{
+    width: 85%;
+    height: 450px;
+    margin: 30px;
+    border-radius: 10px;
+
+}
+
+#condiciones_servicio h2{
+
+    text-align: center;
+    padding: 50px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #6a6a6a;
+}
+
+#condiciones_servicio p{
+    line-height: 2.5;
+    color: #6a6a6a;
+    padding: 25px;
+}
+#condiciones_servicio div{
+    height: 514px;
+}
+
+/*Seccion Importante*/
+
+#Importante{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    
+}
+
+#Importante img{
+    width: 90%;
+    height: 450px;
+    margin: 30px;
+    border-radius: 10px;
+
+}
+
+#Importante h2{
+    text-align: center;
+    padding: 25px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #6a6a6a;
+}
+
+#Importante p{
+    line-height: 1.5;
+    color: #6a6a6a;
+    padding:5px 15px;
+
+}
+#Importante div{
+    width: 100%;
+}
+
+/*************************************************************************/
+/*************************************************************************/
+/********PAGINA DE PRESUPUESTO HTML***************************************/
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+
+#imgform{
+    width: auto;
+    padding: 5% 0;
+}
+#imgform img{
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.flex-innner .privacidad{
+    align-items: center;
+}
