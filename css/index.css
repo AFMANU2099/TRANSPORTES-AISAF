@@ -5,11 +5,20 @@
     scroll-behavior: smooth; 
 }
 body{
+    display: grid;
+    grid-template-areas: 
+    "my-header"
+    "my-main"
+    "my-footer";
+    grid-template-rows: 98px 1fr 98px;
     background-color: #d9d9d9;
 }
-
+main{
+    grid-area: my-main;
+}
 /* Barra de Navegacion*/
 header{
+    grid-area: my-header;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -24,20 +33,22 @@ header{
     
 }
 
-#barlogo{
+#barlogo1{
     margin-left: 20px;
 }
-#barlogo img{
+#barlogo1 img{
     width:180px;
+    height: auto;
 }
-#redessociales{
+#redessociales1{
     margin-right: 20px;
 }
-#redessociales img{
+#redessociales1 img{
     width: 35px;
+    height: auto;
     border-radius: 22px;
 } 
-#barranav #redessociales img:hover{
+#barranav #redessociales1 img:hover{
 opacity: 0.3;
 }
 
@@ -215,6 +226,7 @@ opacity: 0.3;
 }
 #btninicio a img{
     width: 50px;
+    height: auto;
 }
 #btninicio a{
 
@@ -271,7 +283,7 @@ opacity: 0.3;
     color: #1791C8;
 }
 
-#contactoahora #llamaahora{
+#contactoahora #llamaahora1{
     position: relative;
     width: 300px;
     height: 35%;
@@ -285,7 +297,7 @@ opacity: 0.3;
     
 }
 
-#contactoahora #llamaahora:hover{
+#contactoahora #llamaahora1:hover{
     border:2px solid #1791C8;
     background-color: #1791C8;
     
@@ -354,7 +366,7 @@ opacity: 0.3;
     color: #1791C8;
 }
 
-#decisioncorrecta #llamaahora{
+#decisioncorrecta #llamaahora2{
     position: relative;
     width: 300px;
     height: 35%;
@@ -368,7 +380,7 @@ opacity: 0.3;
     
 }
 
-#decisioncorrecta #llamaahora:hover{
+#decisioncorrecta #llamaahora2:hover{
     border:2px solid #1791C8;
     background-color: #1791C8;
     
@@ -393,6 +405,7 @@ opacity: 0.3;
 
 /*Seccion Pie de pagina*/
 footer{
+    grid-area: my-footer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -402,18 +415,19 @@ footer{
     font-size: 20px;
 }
 
-footer #barlogo{
+footer #barlogo2{
     margin: 20px;
 }
-footer #barlogo img{
+footer #barlogo2 img{
     width:160px;
     height:70px;
 }
-footer #redessociales{
+footer #redessociales2{
     margin-right: 20px;
 }
-footer #redessociales img{
+footer #redessociales2 img{
     width: 35px;
+    height: auto;
     border-radius: 22px;
 } 
 
@@ -421,7 +435,7 @@ footer p{
     padding: 10px;
 }
 
-footer #redessociales img:hover{
+footer #redessociales2 img:hover{
     opacity: 0.3;
 }
 
@@ -615,9 +629,18 @@ body{
 line-height: 1.5;
     color: #6a6a6a;
 }
-#container{
+#tarjetas{
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .card{
@@ -647,7 +670,6 @@ line-height: 1.5;
 }
 
 .card .contenido h2{
-
     padding: 10px;
     text-transform: uppercase;
     font-size: 20px;
@@ -655,6 +677,7 @@ line-height: 1.5;
 }
 
 .card .contenido p{
+
     line-height: 1.5;
     color: #6a6a6a;
 }
@@ -741,6 +764,10 @@ line-height: 1.5;
 /*************************************************************************/
 /*************************************************************************/
 
+#datos-empresa img{
+    width: auto;
+    height: auto;
+}
 #imgform{
     width: auto;
     padding: 5% 0;
